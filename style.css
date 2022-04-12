@@ -366,6 +366,10 @@ header:nth-child(2) {
 .icon-footer .box-icon:nth-child(2) {
   margin: 0 30px;
 }
+.box-icon a {
+  font-size: 32px;
+  color: black;
+}
 .box-icon {
   height: 60px;
   border: 1px solid white;
