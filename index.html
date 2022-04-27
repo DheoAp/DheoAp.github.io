@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css" />
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/style_desktop.css" />
     <title>Dheo Apriansyah</title>
   </head>
@@ -18,17 +18,14 @@
           <ul class="nav_links">
             <li><a href="">HOME</a></li>
             <li><a href="">ABOUT</a></li>
-            <li><a href="">PORTFOLIO</a></li>
-            <li><a href="">SERVICE</a></li>
-            <li><a href="">BLOG</a></li>
-            <li><a href="">CLIENTS</a></li>
+            <li><a href="" class="dropbtn">PORTFOLIO</a></li>
+            <li><a href="https://github.com/DheoAp" target="_blank">MY GITHUB</a></li>
             <li><a href="">CONTACT</a></li>
           </ul>
         </nav>
         <div class="menu" id="buttonNav">
           <i class="bi bi-list" id="menu"></i>
         </div>
-        <!-- <a class="cta" href="#"><button>Contact</button></a>    -->
       </header>
     </div>
     <!-- end navbar -->
@@ -54,19 +51,15 @@
           <div class="box-white-before-title"></div>
           <h2 class="title">ABOUT</h2>
         </div>
-        <!-- <div class="text-about">
-          <span>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Perferendis, voluptate!</span>
-        </div> -->
         <div class="bio">
           <img src="image/8.jpg" />
           <div class="text-bio">
             <div class="title-next-image">
-              Hello world. Iam Dheo Apriansyah <br />
-              Junior FrontEnd Developer
+              Hello world. Iam Dheo Apriansyah
+              <h5>Junior Front-End Developer</h5>
             </div>
             <p>
-              Since graduating from college in 2019, I have spent my time learning to code, in 2022 I had the opportunity to work but only for 3 months, at first, I was a BackEnd but because I wasn't confident and uncomfortable, I finally
-              moved to FrontEnd. As long as I am a FrontEnd I feel comfortable and I have successfully completed the challenges from the frontendmentor.
+              Hai perkenalkan nama saya <b>Dheo</b>, saya seorang junior Front-End Developer yang terbiasa membuat tampilan website dengan HTML CSS, Bootstrap 5 dan Javascript. Saya juga menggunakan GIT sebagai version version control dan Github untuk menyimpan semua code project saya. Saya sedang mencari kesempatan untuk menjadi Front-end Developer.
             </p>
           </div>
         </div>
@@ -130,8 +123,18 @@
           <div class="box-experience"></div>
           <div class="des-experience">
             <div class="position-exper">
+              <span class="title-description">Web Developer</span>
+              <span>September 2021 - Januari 2016</span>
+            </div>
+            <div class="company-exper">
+              <span class="title-description">Madina Mitra Teknik (Matrik)</span>
+              <span>Kota Depok</span>
+            </div>
+          </div>
+          <div class="des-experience">
+            <div class="position-exper">
               <span class="title-description">Operator Produksi</span>
-              <span>2015-2016</span>
+              <span>Juli 2015 - Juni 2016</span>
             </div>
             <div class="company-exper">
               <span class="title-description">PT. Samsung Electronics Indonesia</span>
@@ -145,33 +148,78 @@
       <!-- end section one -->
 
       <!-- section two -->
-      <!-- portfolio -->
+      <!-- portofolio -->
       <section class="section">
         <div class="sub-title">
           <div class="box-white-before-title"></div>
-          <h2 class="title">PORTFOLIO</h2>
+          <h2 class="title">Portofolio</h2>
         </div>
-        <p>The portfolio that i made myself and helped by youtube</p>
-        <div class="card-portfolio">
-          <div class="mata">
-            <div class="mata-1">
-              <div class="kelopak"></div>
-              <div class="mata-hitam"></div>
-            </div>
-            <div class="mata-1">
-              <div class="kelopak"></div>
-              <div class="mata-hitam"></div>
+        <div class="cardPortofolio">
+          <div class="card portofolio">
+            <img src="image/portofolio/card_frontendmentor.png" alt="Avatar" style="width: 100%" />
+            <div class="card-footer">
+              <h4>Card</h4>
+              <p>Card Frontendmentor Menggunakan HTML CSS</p>
+              <div class="button-card">
+                <a class="buttonCard" href="./portofolio/card/index.html" target="_blank">Visit</a>
+                <a class="buttonCard" href="https://github.com/DheoAp/card-frontendmentor" target="_blank">Code</a>
+              </div>
             </div>
           </div>
-          <div class="mulut"></div>
+
+          <div class="card portofolio">
+            <img src="image/portofolio/fylo.png" alt="Avatar" style="width: 100%" />
+            <div class="card-footer">
+              <h4>Fylo landing page</h4>
+              <p>Card Menggunakan HTML CSS dan icon Bootstrap 5</p>
+              <div class="button-card">
+                <a class="buttonCard" target="_blank" href="./portofolio/fylo-landing-page/index.html" target="_blank">Visit</a>
+                <a class="buttonCard" target="_blank" href="https://github.com/DheoAp/fylo-landing-page-with-two-column-layout-master">Code</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="card portofolio">
+            <img src="image/portofolio/landing-page.png" alt="Avatar" style="width: 100%" />
+            <div class="card-footer">
+              <h4>Landing page</h4>
+              <p>Landing page Menggunakan HTML CSS, Bootstrap 5 dan Javascript</p>
+              <div class="button-card">
+                <a class="buttonCard" target="_blank" href="./portofolio/landing-page/index.html">Visit</a>
+                <a class="buttonCard" target="_blank" href="https://github.com/DheoAp/dheoapriansyah">Code</a>
+              </div>
+            </div>
+          </div>
         </div>
-        <!-- <ul>
-          <li>ALL</li>
-          <li>FOTO</li>
-          <li>WEBSITE DESIGN</li>
-        </ul> -->
+
+        <div class="cardPortofolio">
+          <div class="card portofolio">
+            <img src="image/portofolio/quiz_app.png" alt="Avatar" style="width: 100%" />
+            <div class="card-footer">
+              <h4>Quiz App</h4>
+              <p>Quiz app Menggunakan HTML CSS, Bootstrap 5 dan Javascript</p>
+              <div class="button-card">
+                <a class="buttonCard" target="_blank" href="./portofolio/quiz-app/index.html">Visit</a>
+                <a class="buttonCard" target="_blank" href="https://github.com/DheoAp/quiz-app">Code</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="card portofolio">
+            <img src="image/portofolio/loopstudios.png" alt="Avatar" style="width: 100%" />
+            <div class="card-footer">
+              <h4>Loop Studios</h4>
+              <p>Loop Studios Menggunakan HTML CSS, Bootstrap 5 dan Javascript</p>
+              <div class="button-card">
+                <a class="buttonCard" target="_blank" href="./portofolio/loopstudios/index.html">Visit</a>
+                <a class="buttonCard" target="_blank" href="https://github.com/DheoAp/loopstudios-landing-page">Code</a>
+              </div>
+            </div>
+          </div>
+        </div>
       </section>
       <!-- end portfolio -->
+
       <!-- end section two -->
 
       <!-- section three -->
@@ -231,6 +279,9 @@
       <div class="attribution">Coded by <a href="#" target="_blank">Dheo Apriansyah</a> 2022</div>
     </div>
     <!-- end footer -->
+    <div id="up"><i class="bi bi-arrow-up"></i></div>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="button_up.js"></script>
     <script>
       // navbar
       let menu = document.querySelector("#menu");
@@ -241,6 +292,15 @@
         let show = "show_nav";
         nav.classList.toggle(show);
       });
+
+      function myFunction() {
+        var x = document.getElementById("myTopnav");
+        if (x.className === "topnav") {
+          x.className += " responsive";
+        } else {
+          x.className = "topnav";
+        }
+      }
     </script>
   </body>
 </html>

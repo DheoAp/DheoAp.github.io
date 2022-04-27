@@ -38,13 +38,14 @@ section.section {
 .background {
   height: 100%;
   width: 100%;
-  position: absolute;
+  /* position: absolute; */
+  position: relative;
   /* z-index: ; */
   background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.73) 0%, rgba(0, 0, 0, 0.6) 99%);
 }
 .hero {
   height: 100vh;
-  background-image: url(image/hero.jpg);
+  background-image: url(../image/hero.jpg);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -273,7 +274,7 @@ header:nth-child(2) {
 .card-experience {
   border: 1px solid white;
   height: auto;
-  max-width: 95%;
+  width: 100%;
   /* padding: 10px 0; */
   position: relative;
   left: 17px;
@@ -282,7 +283,7 @@ header:nth-child(2) {
 .box-experience {
   position: absolute;
   left: -19px;
-  bottom: 63px;
+  bottom: 100px;
   background-color: rgb(139, 165, 78);
   width: 36px;
   height: 35px;
@@ -300,6 +301,51 @@ header:nth-child(2) {
   margin: 10px 0;
 }
 /* end experience */
+
+/* portofolio */
+.cardPortofolio {
+  display: flex;
+  flex-direction: column;
+}
+.cardPortofolio .card.portofolio {
+  width: 300px;
+  margin-bottom: 10px;
+}
+.card.portofolio {
+  background-color: rgb(25, 24, 32);
+  width: 300px;
+}
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+  width: 40%;
+}
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+.card-footer{
+  color: white;
+  padding: 16px;
+}
+.card-footer p{
+  margin: 10px 0;
+}
+.card-footer h4{
+  font-weight: 400;
+}
+.button-card {
+  display: flex;
+}
+.buttonCard {
+  border: 1px solid white;
+  color: white;
+  display: flex;
+  width: 50%;
+  height: 40px;
+  align-items: center;
+  justify-content: space-around;
+}
+/* end portofolio */
 
 /* Contact */
 .contact {
@@ -388,69 +434,34 @@ header:nth-child(2) {
 }
 /* end footer */
 
-/* portfolio */
-.card-portfolio {
-  display: flex;
-  border: 1px solid red;
-  width: 200px;
-  height: 200px;
-  margin-top: 10px;
-  background-color: yellow;
-  justify-content: space-around;
-  align-items: center;
-  flex-direction: column;
-}
-.mata {
-  display: flex;
-  justify-content: space-evenly;
-  margin-top: 26px;
-}
-.kelopak {
-  position: absolute;
-  border-radius: 110px 110px 0 0;
-  width: 50px;
-  height: 49px;
-  margin-bottom: 54px;
-  background-color: red;
-  transition: 0.3s;
-}
-
-.mata-1 {
-  overflow: hidden;
-  display: flex;
-  border: 1px solid black;
-  border-radius: 100%;
-  width: 50px;
-  height: 50px;
-  background-color: white;
-  align-items: center;
-  justify-content: center;
-  position: relative;
-}
-/* mata bergerak */
-.card-portfolio:hover .kelopak {
-  margin-bottom: 100px;
-}
-
-.mata-hitam {
+#up {
   display: inline-block;
-  background-color: black;
-  border-radius: 100%;
-  width: 20px;
-  height: 20px;
-}
-.mulut {
+  background-color: #ff9800;
+  width: 35px;
+  height: 35px;
   text-align: center;
-  border: 1px solid black;
-  background-color: black;
-  border-radius: 10px;
-  width: 50%;
-  height: 10px;
-  transition: 0.3s;
+  border-radius: 4px;
+  position: fixed;
+  padding: 2px;
+  bottom: 30px;
+  right: 30px;
+  transition: background-color 0.3s, opacity 0.5s, visibility 0.5s;
+  opacity: 0;
+  /* opacity: 1; */
+  visibility: hidden;
+  z-index: 1000;
 }
-.card-portfolio:hover .mulut {
-  border-radius: 100%;
-  height: 34px;
-  width: 16%;
+#up i {
+  font-size: 27px;
 }
-/* end portfolio */
+#up:hover {
+  cursor: pointer;
+  background-color: #ff990094;
+}
+#up:active {
+  background-color: #555;
+}
+#up.show {
+  opacity: 1;
+  visibility: visible;
+}
