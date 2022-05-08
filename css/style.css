@@ -323,14 +323,14 @@ header:nth-child(2) {
 .card:hover {
   box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
 }
-.card-footer{
+.card-footer {
   color: white;
   padding: 16px;
 }
-.card-footer p{
+.card-footer p {
   margin: 10px 0;
 }
-.card-footer h4{
+.card-footer h4 {
   font-weight: 400;
 }
 .button-card {
@@ -464,4 +464,11 @@ header:nth-child(2) {
 #up.show {
   opacity: 1;
   visibility: visible;
+}
+
+/* sertifikat */
+.section .sertifikat {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 10px;
 }
